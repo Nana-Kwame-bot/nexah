@@ -28,10 +28,10 @@ class _BottomNavigationState extends State<BottomNavigation> {
           ],
         ),
         bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: const Color(0xFFC4C4C4),
           enableFeedback: true,
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-
               icon: Container(
                 padding: const EdgeInsets.all(8.0),
                 color: _currentIndex == 0
@@ -42,7 +42,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                   color: Colors.black,
                 ),
               ),
-              label: 'Home',
+              label: '',
             ),
             BottomNavigationBarItem(
               icon: Container(
@@ -55,7 +55,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                   color: Colors.black,
                 ),
               ),
-              label: 'Timer',
+              label: '',
             ),
             BottomNavigationBarItem(
               icon: Container(
@@ -68,7 +68,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                   color: Colors.black,
                 ),
               ),
-              label: 'Profile',
+              label: '',
             ),
           ],
           onTap: _onItemTapped,
