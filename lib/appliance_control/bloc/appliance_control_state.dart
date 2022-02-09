@@ -1,16 +1,6 @@
 part of 'appliance_control_bloc.dart';
 
 class ApplianceControlState extends Equatable {
-  @override
-  List<Object> get props => [
-        isLightActive,
-        isFanActive,
-        isACUnitActive,
-        isTVActive,
-        isFridgeActive,
-        isMusicSystemActive,
-      ];
-
   final bool isLightActive;
   final bool isFanActive;
   final bool isACUnitActive;
@@ -69,4 +59,14 @@ class ApplianceControlState extends Equatable {
 
   @override
   bool? get stringify => true;
+
+  @override
+  List<Object> get props => [
+        isLightActive,
+        isFanActive,
+        isACUnitActive,
+        isTVActive,
+        isFridgeActive,
+        isMusicSystemActive,
+      ];
 }

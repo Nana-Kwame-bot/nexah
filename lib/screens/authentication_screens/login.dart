@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:nexah/widgets/forgot_password.dart';
 import 'package:nexah/widgets/form_field_widget.dart';
 import 'package:nexah/widgets/rounded_button.dart';
@@ -20,7 +19,9 @@ class LoginScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
-        title: const TitleWidget(text: 'Login',),
+        title: const TitleWidget(
+          text: 'Login',
+        ),
       ),
       backgroundColor: Colors.white,
       body: Container(
@@ -61,9 +62,7 @@ class LoginScreen extends StatelessWidget {
                           },
                         ),
                         ForgotPassword(
-                          onPressed: () {
-
-                          },
+                          onPressed: () {},
                         ),
                       ],
                     ),
@@ -77,5 +76,3 @@ class LoginScreen extends StatelessWidget {
     );
   }
 }
-
-
